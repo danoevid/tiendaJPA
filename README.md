@@ -1,1 +1,1 @@
-# tiendaJPA
+# libreriaJPA
