@@ -20,30 +20,30 @@ import libreria.Service.LibroService;
 public class Libreria {
 
     public static void main(String[] args) throws Exception {
-       Scanner sc = new Scanner(System.in);
-         LibroService serviLibro = new LibroService();
-         AutorService serviAutor = new AutorService();
-         EditorialService serviEditorial = new EditorialService();
+//       Scanner sc = new Scanner(System.in);
+//         LibroService serviLibro = new LibroService();
+//         AutorService serviAutor = new AutorService();
+//         EditorialService serviEditorial = new EditorialService();
          
          
          
-        Autor autor = serviAutor.verificarExistenciaAutor("17");
-        System.out.println(autor);
-         Editorial editorial = serviEditorial.verificarExistenciaEditorial(29);
-         if(editorial==null){
-             System.out.println("No existe editorial");
-             System.out.println("Crear nueva");
-             editorial = serviEditorial.crearEdiorial("Editorial Obelisco", Boolean.TRUE);
-             List<Editorial>lista = serviEditorial.listarEditorial();
-             for (Editorial edito : lista) {
-                 if(edito.getNombre().equals(editorial.getNombre()))
-                     editorial = edito;
-             }
-             System.out.println(editorial.getId());
-             System.out.println(editorial.getNombre());
-         }
-         
-        Libro libro = serviLibro.crearLibro("EL perdido", 2010, 12, 0, 0, Boolean.TRUE,autor,editorial);
+//        Autor autor = serviAutor.verificarExistenciaAutor("17");
+//        System.out.println(autor);
+//         Editorial editorial = serviEditorial.verificarExistenciaEditorial(29);
+//         if(editorial==null){
+//             System.out.println("No existe editorial");
+//             System.out.println("Crear nueva");
+//             editorial = serviEditorial.crearEdiorial("Editorial Obelisco", Boolean.TRUE);
+//             List<Editorial>lista = serviEditorial.listarEditorial();
+//             for (Editorial edito : lista) {
+//                 if(edito.getNombre().equals(editorial.getNombre()))
+//                     editorial = edito;
+//             }
+//             System.out.println(editorial.getId());
+//             System.out.println(editorial.getNombre());
+//         }
+//         
+//        Libro libro = serviLibro.crearLibro("EL perdido", 2010, 12, 0, 0, Boolean.TRUE,autor,editorial);
         
         //System.out.println(libro);
           
